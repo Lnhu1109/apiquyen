@@ -31,4 +31,8 @@ $pipi = array(
 );
 $json = json_encode($pipi, JSON_UNESCAPED_SLASHES);
 print($json);
+$i = ['\/v\/','\/','L\u00ea C\u00f4ng Quy\u1ec1n'];
+$t = ['/v/','/','Lê Công Quyền'];
+$j = str_replace($i, $t, $json);
+echo $j;
 ?>
