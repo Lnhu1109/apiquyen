@@ -26,7 +26,7 @@ $img = getRandomFromArray($imgList);
 ?>
 <?php
 $pipi = array(
-"data" => "https://www.congquyen-api.tk/api/kiss/".$img,
+"data" => "https://imgapicongquyen.herokuapp.com/api/kiss/".$img,
 "author" => "Lê Công Quyền",
 );
 $json = json_encode($pipi, JSON_UNESCAPED_SLASHES);
