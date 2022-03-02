@@ -29,10 +29,6 @@ $pipi = array(
 "data" => "https://imgapicongquyen.herokuapp.com/api/kiss/".$img,
 "author" => "Lê Công Quyền",
 );
-$json = json_encode($pipi, JSON_UNESCAPED_SLASHES);
+$json = json_encode($pipi, JSON_UNESCAPED_UNICODE);
 print($json);
-$i = ['\/v\/','\/','L\u00ea C\u00f4ng Quy\u1ec1n'];
-$t = ['/v/','/','Lê Công Quyền'];
-$j = str_replace($i, $t, $json);
-echo $j;
 ?>
