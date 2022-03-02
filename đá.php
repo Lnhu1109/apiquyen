@@ -29,6 +29,6 @@ $pipi = array(
 "data" => "https://imgapicongquyen.herokuapp.com/api/spar/".$img,
 "author" => "Lê Công Quyền",
 );
-$json = json_encode($pipi, JSON_UNESCAPED_SLASHES);
+$json = json_encode($pipi, JSON_UNESCAPED_UNICODE);
 print($json);
 ?>
